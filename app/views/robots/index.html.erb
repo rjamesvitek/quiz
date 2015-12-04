@@ -1,0 +1,14 @@
+<% @robots.each do |robot| %>
+  <h1>
+    <%= robot.name %>
+  </h1>
+  <p>
+    <%= robot.intro %>
+  </p>
+<% end %>
+
+<h3>
+  <a href="<%= new_robot_path %>" >
+    Introduce Us to a New Robot
+  </a>
+</h3>

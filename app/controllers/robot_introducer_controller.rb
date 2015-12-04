@@ -1,0 +1,2 @@
+class RobotIntroducerController < ApplicationController
+end

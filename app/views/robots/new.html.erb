@@ -1,0 +1,24 @@
+<h1>
+  Introduce Us to a New Robot
+</h1>
+
+<!--
+<form action="/robots" method="post" >
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <h4>Robot Name</h4>
+  <input name="robot[name]" type="text" size="55" />
+  <h4>Robot Introduction</h4>
+  <input name="robot[intro]" type="text" size="255" />
+  <br />
+  <input type="submit" >
+</form>
+-->
+
+<%= simple_form_for @robot do |f| %>
+  <h4>Robot Name</h4>
+  <%= f.input :name, label: 'Robot Name'  %>
+  <h4>Robot Introduction</h4>
+  <%= f.input :intro, label: 'Introduction' %>
+  <br />
+  <%= f.submit 'Create', :class => 'btn btn-primary' %>
+<% end %>
